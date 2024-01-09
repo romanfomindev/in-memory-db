@@ -10,3 +10,7 @@ func LoadEnvConfig(path string) error {
 
 	return nil
 }
+
+type AppConfig interface {
+	Env() string
+}
